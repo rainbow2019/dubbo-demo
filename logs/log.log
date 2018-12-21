@@ -1,0 +1,521 @@
+2018-12-21 23:25:34  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:25:34  [ main:146 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:34  [ main:147 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:34  [ main:487 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.lang.NoClassDefFoundError: io/netty/channel/EventLoopGroup
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.startQosServer(QosProtocolWrapper.java:95)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:68)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:65)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:394)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:333)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:163)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:67)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083)
+	at com.dubbo.consumers.Consumer.main(Consumer.java:11)
+Caused by: java.lang.ClassNotFoundException: io.netty.channel.EventLoopGroup
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 16 more
+2018-12-21 23:25:34  [ main:521 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19000&side=consumer&timestamp=1545405884194 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19000&side=consumer&timestamp=1545405884194 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5580&side=provider&timestamp=1545405759111}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:34  [ main:542 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:39  [ main:5578 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:39  [ main:5644 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:40  [ main:6540 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5580&side=provider&timestamp=1545405759111, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:40  [ main:6647 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x461ad730, /10.108.170.143:13551 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:40  [ main:6648 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ main:6708 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&register.ip=10.108.170.143&remote.timestamp=1545405759111&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6830 ] - [ INFO ]   [DUBBO] Run shutdown hook now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6831 ] - [ INFO ]   [DUBBO] Close all registries [zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-consumer&client=zkclient&dubbo=2.0.2&group=dubbo&interface=com.alibaba.dubbo.registry.RegistryService&pid=7596&timestamp=1545405934775], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6831 ] - [ INFO ]   [DUBBO] Destroy registry:zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-consumer&client=zkclient&dubbo=2.0.2&group=dubbo&interface=com.alibaba.dubbo.registry.RegistryService&pid=7596&timestamp=1545405934775, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6832 ] - [ INFO ]   [DUBBO] Unregister: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6889 ] - [ INFO ]   [DUBBO] Destroy unregister url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6891 ] - [ INFO ]   [DUBBO] Unsubscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6892 ] - [ INFO ]   [DUBBO] Destroy unsubscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6901 ] - [ INFO ]   [DUBBO] Close dubbo connect: /10.108.170.143:13551-->/10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6903 ] - [ INFO ]   [DUBBO] Close netty channel [id: 0x461ad730, /10.108.170.143:13551 => /10.108.170.143:20880], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboSharedHandler-thread-1:6906 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:20880,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&register.ip=10.108.170.143&remote.timestamp=1545405759111&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6907 ] - [ INFO ]   [DUBBO] Close dubbo connect: 10.108.170.143:0-->10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:25:41  [ DubboShutdownHook:6908 ] - [ INFO ]   [DUBBO] Destroy reference: dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&register.ip=10.108.170.143&remote.timestamp=1545405759111&side=consumer&timestamp=1545405934738, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:27:57  [ main:202 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:203 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:493 ] - [ INFO ]   [DUBBO] The service ready on spring started. service: com.dubbo.interfaces.User, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:672 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to local registry, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:672 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:57  [ main:673 ] - [ INFO ]   [DUBBO] Register dubbo service com.dubbo.interfaces.User url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583 to registry registry://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider&client=zkclient&dubbo=2.0.2&group=dubbo&pid=19192&registry=zookeeper&timestamp=1545406077577, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:58  [ main:1610 ] - [ INFO ]   [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:58  [ main:1726 ] - [ INFO ]   [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:58  [ main:1744 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-provider-39.106.30.172:2181.cache, data: {interfaces.UserInterface=empty://10.108.170.143:20880/interfaces.UserInterface?anyhost=true&application=dubbo-provider&bean.name=interfaces.UserInterface&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=interfaces.UserInterface&methods=sayHello&pid=9772&side=provider&timestamp=1545385613719, com.dubbo.interfaces.User=empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5580&side=provider&timestamp=1545405759111}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:27:58  [ main:1751 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:04  [ main:7600 ] - [ INFO ]   [DUBBO] Register: dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:04  [ main:7617 ] - [ INFO ]   [DUBBO] Subscribe: provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:04  [ main:7634 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, urls: [empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:16  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:28:16  [ main:209 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:16  [ main:210 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:17  [ main:1493 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:28:17  [ main:1495 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:28:17  [ main:1508 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7596&side=consumer&timestamp=1545405934738 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5580&side=provider&timestamp=1545405759111}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:17  [ main:1515 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6169 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6221 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6473 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6597 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0xc393ba33, /10.108.170.143:13780 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6598 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:22  [ main:6664 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&register.ip=10.108.170.143&remote.timestamp=1545406077583&side=consumer&timestamp=1545406096727, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:38  [ New I/O worker #1:41011 ] - [ WARN ]   [DUBBO] All clients has discontected from /10.108.170.143:20880. You can graceful shutdown now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:38  [ DubboServerHandler-10.108.170.143:20880-thread-4:41012 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:13780,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:48  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:28:49  [ main:179 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:49  [ main:179 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:49  [ main:434 ] - [ INFO ]   [DUBBO] The service ready on spring started. service: com.dubbo.interfaces.User, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:49  [ main:588 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to local registry, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:49  [ main:588 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:49  [ main:589 ] - [ INFO ]   [DUBBO] Register dubbo service com.dubbo.interfaces.User url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351 to registry registry://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider&client=zkclient&dubbo=2.0.2&group=dubbo&pid=5824&registry=zookeeper&timestamp=1545406129343, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:50  [ main:1573 ] - [ INFO ]   [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:50  [ main:1689 ] - [ INFO ]   [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:50  [ main:1704 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-provider-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583, interfaces.UserInterface=empty://10.108.170.143:20880/interfaces.UserInterface?anyhost=true&application=dubbo-provider&bean.name=interfaces.UserInterface&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=interfaces.UserInterface&methods=sayHello&pid=9772&side=provider&timestamp=1545385613719}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:50  [ main:1710 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:55  [ main:6272 ] - [ INFO ]   [DUBBO] Register: dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:55  [ main:6292 ] - [ INFO ]   [DUBBO] Subscribe: provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:28:55  [ main:6313 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, urls: [empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:07  [ main:1 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:29:07  [ main:147 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:07  [ main:148 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:09  [ main:1548 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:29:09  [ main:1550 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:29:09  [ main:1563 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=7104&side=consumer&timestamp=1545406096727 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19192&side=provider&timestamp=1545406077583}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:09  [ main:1572 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6194 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6213 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6464 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6590 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x4442a75f, /10.108.170.143:13973 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6592 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:14  [ main:6641 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&register.ip=10.108.170.143&remote.timestamp=1545406129351&side=consumer&timestamp=1545406148372, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:57  [ New I/O worker #1:68211 ] - [ WARN ]   [DUBBO] All clients has discontected from /10.108.170.143:20880. You can graceful shutdown now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:29:57  [ DubboServerHandler-10.108.170.143:20880-thread-4:68212 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:13973,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:33  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:30:33  [ main:150 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:33  [ main:151 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:35  [ main:1422 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:30:35  [ main:1425 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:30:35  [ main:1437 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19712&side=consumer&timestamp=1545406148372 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:35  [ main:1445 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6054 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6074 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6132 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6269 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x8a3c871f, /10.108.170.143:14091 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6270 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:30:39  [ main:6324 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&register.ip=10.108.170.143&remote.timestamp=1545406129351&side=consumer&timestamp=1545406233994, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:23  [ New I/O worker #2:155033 ] - [ WARN ]   [DUBBO] All clients has discontected from /10.108.170.143:20880. You can graceful shutdown now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:23  [ DubboServerHandler-10.108.170.143:20880-thread-8:155035 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:14091,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:31  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:31:31  [ main:167 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:31  [ main:168 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:32  [ main:1592 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:31:32  [ main:1594 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:31:32  [ main:1609 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19664&side=consumer&timestamp=1545406233994 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:32  [ main:1620 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6236 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6269 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6328 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6491 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x36bc7a55, /10.108.170.143:14191 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6492 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:37  [ main:6561 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&register.ip=10.108.170.143&remote.timestamp=1545406129351&side=consumer&timestamp=1545406291768, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:47  [ New I/O worker #3:178697 ] - [ WARN ]   [DUBBO] All clients has discontected from /10.108.170.143:20880. You can graceful shutdown now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:31:47  [ DubboServerHandler-10.108.170.143:20880-thread-12:178698 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:14191,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:24  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:32:24  [ main:166 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:24  [ main:167 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:24  [ main:417 ] - [ INFO ]   [DUBBO] The service ready on spring started. service: com.dubbo.interfaces.User, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:25  [ main:576 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to local registry, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:25  [ main:577 ] - [ INFO ]   [DUBBO] Export dubbo service com.dubbo.interfaces.User to url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:25  [ main:578 ] - [ INFO ]   [DUBBO] Register dubbo service com.dubbo.interfaces.User url dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949 to registry registry://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-provider&client=zkclient&dubbo=2.0.2&group=dubbo&pid=14920&registry=zookeeper&timestamp=1545406344941, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:26  [ main:1508 ] - [ INFO ]   [DUBBO] qos-server bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:26  [ main:1642 ] - [ INFO ]   [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:26  [ main:1661 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-provider-39.106.30.172:2181.cache, data: {interfaces.UserInterface=empty://10.108.170.143:20880/interfaces.UserInterface?anyhost=true&application=dubbo-provider&bean.name=interfaces.UserInterface&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=interfaces.UserInterface&methods=sayHello&pid=9772&side=provider&timestamp=1545385613719, com.dubbo.interfaces.User=empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:26  [ main:1669 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:31  [ main:7239 ] - [ INFO ]   [DUBBO] Register: dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:31  [ main:7336 ] - [ INFO ]   [DUBBO] Subscribe: provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:31  [ main:7365 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url provider://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, urls: [empty://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&category=configurators&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:45  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:32:45  [ main:158 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:45  [ main:159 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:47  [ main:1424 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:32:47  [ main:1427 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:32:47  [ main:1440 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=19436&side=consumer&timestamp=1545406291768 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5824&side=provider&timestamp=1545406129351}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:47  [ main:1450 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:51  [ main:6041 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:51  [ main:6061 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:51  [ main:6111 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:52  [ main:6289 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x6b931d03, /10.108.170.143:14396 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:52  [ main:6289 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:32:52  [ main:6379 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406366246, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:45  [ New I/O worker #1:80630 ] - [ WARN ]   [DUBBO] All clients has discontected from /10.108.170.143:20880. You can graceful shutdown now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:45  [ DubboServerHandler-10.108.170.143:20880-thread-4:80631 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:14396,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:52  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:33:52  [ main:154 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:52  [ main:155 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:54  [ main:1473 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:33:54  [ main:1475 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:33:54  [ main:1490 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5628&side=consumer&timestamp=1545406366246 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:54  [ main:1502 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:58  [ main:6194 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:58  [ main:6213 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:58  [ main:6261 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:58  [ main:6395 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x5851dcca, /10.108.170.143:14502 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:58  [ main:6396 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:33:59  [ main:6466 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406433040, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:14  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:34:15  [ main:145 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:15  [ main:145 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:16  [ main:1539 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:34:16  [ main:1541 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:34:16  [ main:1553 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=13340&side=consumer&timestamp=1545406433040 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:16  [ main:1561 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6158 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6176 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6223 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6346 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0x42838f52, /10.108.170.143:14603 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6347 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:21  [ main:6418 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406455358, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:27  [ DubboServerHandler-10.108.170.143:20880-thread-10:123013 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:14603,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:45  [ main:0 ] - [ INFO ]  using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-21 23:34:45  [ main:154 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, try to find an extension (bean) of type java.lang.String, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:45  [ main:154 ] - [ WARN ]   [DUBBO] No spring extension (bean) named:defaultCompiler, type:java.lang.String found, stop get bean., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:47  [ main:1534 ] - [ ERROR ]   [DUBBO] qos-server can not bind localhost:22222, dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:34:47  [ main:1537 ] - [ WARN ]   [DUBBO] Fail to start qos server: , dubbo version: 2.6.5, current host: 10.108.170.143
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:258)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:474)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-21 23:34:47  [ main:1553 ] - [ INFO ]   [DUBBO] Load registry store file C:\Users\赵红\.dubbo\dubbo-registry-dubbo-consumer-39.106.30.172:2181.cache, data: {com.dubbo.interfaces.User=empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358 empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=5040&side=consumer&timestamp=1545406455358 dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949}, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:47  [ main:1563 ] - [ INFO ]   [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:51  [ main:6176 ] - [ INFO ]   [DUBBO] Register: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:51  [ main:6212 ] - [ INFO ]   [DUBBO] Subscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:51  [ main:6268 ] - [ INFO ]   [DUBBO] Notify urls for subscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, urls: [dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=configurators&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, empty://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ main:6393 ] - [ INFO ]   [DUBBO] Successed connect to server /10.108.170.143:20880 from NettyClient 10.108.170.143 using dubbo version 2.6.5, channel is NettyChannel [channel=[id: 0xfac0cf73, /10.108.170.143:14704 => /10.108.170.143:20880]], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ main:6394 ] - [ INFO ]   [DUBBO] Start NettyClient DESKTOP-8J6NQ83/10.108.170.143 connect to the server /10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ main:6484 ] - [ INFO ]   [DUBBO] Refer dubbo service com.dubbo.interfaces.User from url zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6631 ] - [ INFO ]   [DUBBO] Run shutdown hook now., dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6632 ] - [ INFO ]   [DUBBO] Close all registries [zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-consumer&client=zkclient&dubbo=2.0.2&group=dubbo&interface=com.alibaba.dubbo.registry.RegistryService&pid=15136&timestamp=1545406486142], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6634 ] - [ INFO ]   [DUBBO] Destroy registry:zookeeper://39.106.30.172:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-consumer&client=zkclient&dubbo=2.0.2&group=dubbo&interface=com.alibaba.dubbo.registry.RegistryService&pid=15136&timestamp=1545406486142, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6636 ] - [ INFO ]   [DUBBO] Unregister: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6647 ] - [ INFO ]   [DUBBO] Destroy unregister url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=consumers&check=false&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6647 ] - [ INFO ]   [DUBBO] Unsubscribe: consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6648 ] - [ INFO ]   [DUBBO] Destroy unsubscribe url consumer://10.108.170.143/com.dubbo.interfaces.User?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.0.2&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6656 ] - [ INFO ]   [DUBBO] Close dubbo connect: /10.108.170.143:14704-->/10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6657 ] - [ INFO ]   [DUBBO] Close netty channel [id: 0xfac0cf73, /10.108.170.143:14704 => /10.108.170.143:20880], dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboServerHandler-10.108.170.143:20880-thread-13:147787 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:14704,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-provider&bean.name=com.dubbo.interfaces.User&bind.ip=10.108.170.143&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=14920&side=provider&timestamp=1545406344949, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboSharedHandler-thread-1:6660 ] - [ INFO ]   [DUBBO] disconnected from /10.108.170.143:20880,url:dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6663 ] - [ INFO ]   [DUBBO] Close dubbo connect: 10.108.170.143:0-->10.108.170.143:20880, dubbo version: 2.6.5, current host: 10.108.170.143
+2018-12-21 23:34:52  [ DubboShutdownHook:6663 ] - [ INFO ]   [DUBBO] Destroy reference: dubbo://10.108.170.143:20880/com.dubbo.interfaces.User?anyhost=true&application=dubbo-consumer&bean.name=com.dubbo.interfaces.User&check=false&dubbo=2.0.2&generic=false&interface=com.dubbo.interfaces.User&methods=concat&pid=15136&register.ip=10.108.170.143&remote.timestamp=1545406344949&side=consumer&timestamp=1545406486108, dubbo version: 2.6.5, current host: 10.108.170.143

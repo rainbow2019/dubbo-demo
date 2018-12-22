@@ -1,5 +1,7 @@
 package com.dubbo.consumers;
 
+import com.alibaba.dubbo.rpc.cluster.LoadBalance;
+import com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance;
 import com.dubbo.interfaces.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,5 +18,6 @@ public class Consumer {
         System.out.println("========================================================================================" +
                 "===============================================================================================");
         System.exit(1);
+//        LoadBalance
     }
 }

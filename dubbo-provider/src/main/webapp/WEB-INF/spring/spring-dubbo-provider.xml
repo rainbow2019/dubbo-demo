@@ -17,8 +17,8 @@
     <dubbo:protocol name="dubbo" port="20880" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.dubbo.interfaces.User" ref="userService" />
-
+    <!--loadbalance用于设置负载均衡-->
+    <dubbo:service interface="com.dubbo.interfaces.User" ref="userService" loadbalance="roundrobin" />
     <!-- 和本地bean一样实现服务 -->
     <bean id="userService" class="com.dubbo.impl.StudUser" />
 </beans>

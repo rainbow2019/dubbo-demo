@@ -11,6 +11,8 @@
     <module>dubbo-provider</module>
     <module>dubbo-interfaces</module>
     <module>dubbo-consumer</module>
+    <module>zookeeper-demo</module>
+    <module>dubbo-sources-learning</module>
   </modules>
   <packaging>pom</packaging>
 

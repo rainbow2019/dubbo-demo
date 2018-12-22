@@ -11,5 +11,8 @@
     <dubbo:registry protocol = "zookeeper" address="39.106.30.172:2181" client="zkclient" group="dubbo" />
 
     <!-- 生成远程服务代理，可以和本地bean一样使用userService -->
-    <dubbo:reference id="userService" interface="com.dubbo.interfaces.User" />
+    <!--init= "true" 表示需要饥饿加载，即没有人调用引用，也立即生成动态代理-->
+    <dubbo:reference id="userService" interface="com.dubbo.interfaces.User" init="true" >
+        <dubbo:parameter key="token" value="123456"/>
+    </dubbo:reference>
 </beans>

@@ -1,5 +1,6 @@
 package com.dubbo.consumers;
 
+import com.alibaba.dubbo.config.ReferenceConfig;
 import com.alibaba.dubbo.rpc.cluster.LoadBalance;
 import com.alibaba.dubbo.rpc.cluster.loadbalance.RandomLoadBalance;
 import com.dubbo.interfaces.User;
@@ -19,5 +20,6 @@ public class Consumer {
                 "===============================================================================================");
         System.exit(1);
 //        LoadBalance
+//        ReferenceConfig
     }
 }

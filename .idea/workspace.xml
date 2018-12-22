@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f77ab15-e9d0-40e7-8e4c-84a5df4fd275" name="Default Changelist" comment="" />
+    <list default="true" id="6f77ab15-e9d0-40e7-8e4c-84a5df4fd275" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dubbo-provider/target/" />
@@ -27,7 +29,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
-          <entry key="class" value="2" />
+          <entry key="class" value="3" />
           <entry key="java" value="10" />
           <entry key="properties" value="4" />
           <entry key="xml" value="26" />
@@ -35,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
+          <entry key="CLASS" value="3" />
           <entry key="JAVA" value="10" />
           <entry key="Properties" value="4" />
           <entry key="UML" value="1" />
@@ -44,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1014" />
+          <entry key="java" value="1032" />
           <entry key="properties" value="20" />
           <entry key="txt" value="8" />
           <entry key="xml" value="532" />
@@ -52,7 +54,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1014" />
+          <entry key="JAVA" value="1032" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="20" />
           <entry key="XML" value="532" />
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="575">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,47 +76,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
+        <entry file="jar://C:/Java/Maven/repositories/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/config/ReferenceConfig.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="425">
+              <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+              <folding>
+                <element signature="e#2664#2971#0" expanded="true" />
+                <element signature="e#2970#2971#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,12 +126,12 @@
         <option value="$PROJECT_DIR$/dubbo-sources/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-sources-learning/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo.xml" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java" />
       </list>
     </option>
   </component>
@@ -185,7 +155,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -350,7 +320,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545474490116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545475357481" />
     <property name="last_opened_file_path" value="C:/Java/visualvm_142/bin/visualvm.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -423,7 +393,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545396988836</updated>
-      <workItem from="1545396992821" duration="12163000" />
+      <workItem from="1545396992821" duration="12546000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1545471687009</created>
@@ -436,10 +406,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12163000" />
+    <option name="totallyTimeSpent" value="12546000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -649,34 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -687,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -701,10 +640,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="425">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/dubbo/consumers/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Maven/repositories/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/config/ReferenceConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="89" column="13" lean-forward="true" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+          <folding>
+            <element signature="e#2664#2971#0" expanded="true" />
+            <element signature="e#2970#2971#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

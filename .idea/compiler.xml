@@ -9,10 +9,12 @@
         <module name="dubbo-consumer" />
         <module name="dubbo-interfaces" />
         <module name="dubbo-provider" />
-        <module name="dubbo-sources" />
         <module name="dubbo-sources-learning" />
         <module name="zookeeperdemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dubbo-sources" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -74,6 +74,17 @@
       <artifactId>spring-web</artifactId>
       <version>5.1.3.RELEASE</version>
     </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.54</version>
+    </dependency>
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.itlgl/byteutil &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>com.itlgl</groupId>-->
+      <!--<artifactId>byteutil</artifactId>-->
+      <!--<version>0.0.5</version>-->
+    <!--</dependency>-->
   </dependencies>
 
   <build>

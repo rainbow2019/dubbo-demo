@@ -69,7 +69,7 @@ public class DubboClientPorxy {
         header[3] = 0x00;
 
         // messageId(8B)，每次请求的唯一ID， 8字节 = Long
-        byte[] messageId = ByteUtil.long2bytes(1);
+        byte[] messageId = ByteUtil.long2bytes(1L);
         System.arraycopy(messageId, 0, header, 4, 8);
 
         // bodyLength(4B)，后面的内容长度，4字节 = Int

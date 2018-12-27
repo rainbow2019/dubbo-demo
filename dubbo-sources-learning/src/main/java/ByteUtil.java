@@ -456,7 +456,6 @@ public class ByteUtil {
             builder.append(b >> 1 & 0x01);
             builder.append(b & 0x01);
         }
-
         return builder.toString();
     }
 
@@ -496,5 +495,21 @@ public class ByteUtil {
             return 0;
         }
     }
+
+    public static byte[] short2bytes(Short s){
+        //TO DO
+        return new byte[1];
+    }
+
+    public static byte[] long2bytes(Long s){
+        //TO DO
+        return new byte[1];
+    }
+
+    public static byte[] int2bytes(Integer s){
+        //TO DO
+        return new byte[1];
+    }
+
 }
 

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f77ab15-e9d0-40e7-8e4c-84a5df4fd275" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Test12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +24,7 @@
     <session id="-2138941124">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.opened" value="4" />
@@ -38,26 +33,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
-          <entry key="class" value="20" />
-          <entry key="java" value="39" />
+          <entry key="class" value="21" />
+          <entry key="java" value="43" />
+          <entry key="jsp" value="1" />
           <entry key="log" value="1" />
-          <entry key="properties" value="6" />
-          <entry key="xml" value="35" />
+          <entry key="properties" value="7" />
+          <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="20" />
-          <entry key="JAVA" value="39" />
+          <entry key="CLASS" value="21" />
+          <entry key="JAVA" value="43" />
+          <entry key="JSP" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="7" />
           <entry key="UML" value="1" />
-          <entry key="XML" value="35" />
+          <entry key="XML" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5026" />
+          <entry key="java" value="5338" />
           <entry key="properties" value="20" />
           <entry key="txt" value="8" />
           <entry key="xml" value="577" />
@@ -65,7 +62,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5026" />
+          <entry key="JAVA" value="5338" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="20" />
           <entry key="XML" value="577" />
@@ -78,51 +75,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="25">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZkClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Java/JDK8/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20075">
-              <caret line="847" column="54" selection-start-line="847" selection-start-column="54" selection-end-line="847" selection-end-column="54" />
-              <folding>
-                <element signature="e#31007#31008#0" expanded="true" />
-                <element signature="e#31039#31040#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Java/JDK8/src.zip!/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2950">
-              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="45" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -144,6 +101,8 @@
       <find>2181</find>
       <find>toString</find>
       <find>zook</find>
+      <find>No appenders could be found for logger</find>
+      <find>ZooKeeper(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,11 +169,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-14" />
-    <option name="y" value="-14" />
-    <option name="width" value="2425" />
-    <option name="height" value="1325" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -288,46 +246,58 @@
             <path>
               <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-sources-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-sources-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-sources-learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-sources-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,7 +308,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546315372174" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546336098978" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -348,6 +318,10 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GithubRepositories\dubbo-demo\dubbo-registry-zookeeper-demo\src\main\webapp\WEB-INF\lib\zookeeper-3.4.13-sources.jar!\META-INF" />
+      <recent name="D:\GithubRepositories\dubbo-demo\zookeeper-demo\src\main\webapp\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GithubRepositories\dubbo-demo\dubbo-registry-zookeeper-demo\src\main\webapp\WEB-INF\lib" />
       <recent name="D:\GithubRepositories\dubbo-demo\dubbo-registry-zookeeper-demo\src\main\webapp\WEB-INF" />
@@ -474,7 +448,7 @@
       <workItem from="1545396992821" duration="13230000" />
       <workItem from="1545486092331" duration="7204000" />
       <workItem from="1545897224757" duration="26229000" />
-      <workItem from="1546309843850" duration="5398000" />
+      <workItem from="1546309843850" duration="11681000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1545471687009</created>
@@ -490,28 +464,17 @@
       <option name="project" value="LOCAL" />
       <updated>1545902781361</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1546336104060</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546336104060</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 10h 45m 03s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 10h 46m 39s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 10h 47m 43s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 10h 57m 20s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperDemo - 2019.01.01 at 10h 57m 58s.xml">
-      <configuration name="ZookeeperDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperDemo - 2019.01.01 at 10h 58m 16s.xml">
-      <configuration name="ZookeeperDemo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ZookeeperDemo - 2019.01.01 at 11h 02m 19s.xml">
       <configuration name="ZookeeperDemo" configurationId="JUnit" />
     </history-entry>
@@ -524,15 +487,33 @@
     <history-entry file="ZookeeperDemo_test - 2019.01.01 at 11h 34m 39s.xml">
       <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 13h 29m 39s.xml">
+      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperDemo - 2019.01.01 at 13h 31m 24s.xml">
+      <configuration name="ZookeeperDemo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 15h 13m 41s.xml">
+      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 15h 14m 14s.xml">
+      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 16h 21m 15s.xml">
+      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 17h 48m 10s.xml">
+      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52061000" />
+    <option name="totallyTimeSpent" value="58344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25067025" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25067025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -542,7 +523,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.75177306" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37304965" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,21 +559,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Java/Maven/repositories/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/rpc/cluster/loadbalance/RandomLoadBalance.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/Maven/repositories/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/rpc/cluster/LoadBalance.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo.xml" />
     <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -720,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/Maven/repositories/org/apache/zookeeper/zookeeper/3.4.13/zookeeper-3.4.13.jar!/org/apache/zookeeper/data/Stat.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -828,31 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/JDK8/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20075">
-          <caret line="847" column="54" selection-start-line="847" selection-start-column="54" selection-end-line="847" selection-end-column="54" />
-          <folding>
-            <element signature="e#31007#31008#0" expanded="true" />
-            <element signature="e#31039#31040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/JDK8/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2950">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -875,28 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Watcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="docComment;class#Watcher#0" />
-            <element signature="docComment;class#Event#0;class#Watcher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZkClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -914,17 +830,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/META-INF/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/Maven/repositories/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/org/slf4j/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="287" column="46" lean-forward="true" selection-start-line="287" selection-start-column="46" selection-end-line="287" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/JDK8/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/JDK8/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="841" lean-forward="true" selection-start-line="841" selection-end-line="841" />
+          <folding>
+            <element signature="e#31007#31008#0" expanded="true" />
+            <element signature="e#31039#31040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZkClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/ZooKeeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="769" column="18" selection-start-line="769" selection-start-column="18" selection-end-line="769" selection-end-column="18" />
+        <state relative-caret-position="32">
+          <caret line="551" column="37" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="docComment;class#Watcher#0" />
+            <element signature="docComment;class#Event#0;class#Watcher#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="25">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

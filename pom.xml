@@ -13,6 +13,7 @@
     <module>dubbo-consumer</module>
     <module>zookeeper-demo</module>
     <module>dubbo-sources-learning</module>
+    <module>dubbo-registry-zookeeper-demo</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -43,11 +44,11 @@
       <artifactId>zookeeper</artifactId>
       <version>3.4.13</version>
     </dependency>
-    <dependency>
-      <groupId>com.101tec</groupId>
-      <artifactId>zkclient</artifactId>
-      <version>0.11</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>com.101tec</groupId>-->
+      <!--<artifactId>zkclient</artifactId>-->
+      <!--<version>0.11</version>-->
+    <!--</dependency>-->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>dubbo</artifactId>

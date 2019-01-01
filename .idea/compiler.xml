@@ -10,6 +10,7 @@
         <module name="dubbo-interfaces" />
         <module name="dubbo-provider" />
         <module name="dubbo-sources-learning" />
+        <module name="dubboregistryzookeeperdemo" />
         <module name="zookeeperdemo" />
       </profile>
     </annotationProcessing>

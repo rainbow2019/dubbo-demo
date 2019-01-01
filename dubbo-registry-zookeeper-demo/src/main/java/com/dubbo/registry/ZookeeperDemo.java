@@ -16,6 +16,10 @@ public class ZookeeperDemo implements Watcher {
         this.zk = new ZooKeeper("39.106.30.172:2181,39.106.30.172:2182," +
                 "39.106.30.172:2183,39.106.30.172:2184,39.106.30.172:2185",
                 80000, this);
+        // 建立连接的第一个参数:connectString表示Zookeeper集群的所有的服务hostport,
+        // 如果传递一个，Zookeeper会在超时时间内重新连接该主机，直到超时；
+        // 如果传递多个，Zookeeper会随机选择一个连接，在超时时间内，若连接失败，则会重新选择一个再次连接。
+        // 这里采用了最简单的负载均衡策略：随机顺序选择。
         System.out.println("等待Zookeeper建立连接......");
         countDownLatch.await();
         System.out.println("Zookeeper建立连接成功!!!!!!");
@@ -36,6 +40,10 @@ public class ZookeeperDemo implements Watcher {
 
     @Override
     public void process(WatchedEvent watchedEvent) {
+        if (watchedEvent.getState() == Event.KeeperState.Disconnected){
+            System.out.println("---watchedEvent--- = " + watchedEvent);
+            return;
+        }
         if (watchedEvent.getState() == Event.KeeperState.SyncConnected) {//保持着连接
             System.out.println("watchedEvent = " + watchedEvent);
         }else{

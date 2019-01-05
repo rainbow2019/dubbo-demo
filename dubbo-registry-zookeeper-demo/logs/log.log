@@ -188,3 +188,5 @@
 2019-01-05 12:53:01  [ main-SendThread(39.106.30.172:2181):9369 ] - [ INFO ]  Opening socket connection to server 39.106.30.172/39.106.30.172:2181. Will not attempt to authenticate using SASL (unknown error)
 2019-01-05 12:53:01  [ main-SendThread(39.106.30.172:2181):9380 ] - [ INFO ]  Socket connection established to 39.106.30.172/39.106.30.172:2181, initiating session
 2019-01-05 12:53:01  [ main-SendThread(39.106.30.172:2181):9739 ] - [ INFO ]  Session establishment complete on server 39.106.30.172/39.106.30.172:2181, sessionid = 0x1032d5d368f0004, negotiated timeout = 40000
+2019-01-05 12:52:55  [ main-SendThread(39.106.30.172:2183):101646 ] - [ WARN ]  Client session timed out, have not heard from server in 82474ms for sessionid 0x3032d5d368d0002
+2019-01-05 13:26:42  [ main-SendThread(39.106.30.172:2183):2128892 ] - [ INFO ]  Client session timed out, have not heard from server in 82474ms for sessionid 0x3032d5d368d0002, closing socket connection and attempting reconnect

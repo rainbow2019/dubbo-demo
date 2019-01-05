@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f77ab15-e9d0-40e7-8e4c-84a5df4fd275" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/logs/log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/target/classes/com/dubbo/registry/ZookeeperDemo.class" afterDir="false" />
     </list>
@@ -24,17 +25,18 @@
     <session id="-2138941124">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="class" value="21" />
-          <entry key="java" value="43" />
+          <entry key="java" value="50" />
           <entry key="jsp" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="7" />
@@ -44,7 +46,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="21" />
-          <entry key="JAVA" value="43" />
+          <entry key="JAVA" value="50" />
           <entry key="JSP" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="7" />
@@ -54,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5338" />
+          <entry key="java" value="6476" />
           <entry key="properties" value="20" />
           <entry key="txt" value="8" />
           <entry key="xml" value="577" />
@@ -62,7 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5338" />
+          <entry key="JAVA" value="6476" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="20" />
           <entry key="XML" value="577" />
@@ -72,14 +74,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="341">
+              <caret line="92" column="13" lean-forward="true" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Zookeeper_MultiOp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/OpResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Op.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -103,6 +132,7 @@
       <find>zook</find>
       <find>No appenders could be found for logger</find>
       <find>ZooKeeper(</find>
+      <find>List&lt;ACL&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,6 +174,7 @@
         <option value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZkClient.java" />
         <option value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Test12.java" />
         <option value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java" />
+        <option value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Zookeeper_MultiOp.java" />
       </list>
     </option>
   </component>
@@ -170,9 +201,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -182,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -303,12 +333,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546336098978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546665993473" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,7 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ZookeeperDemo.test">
+  <component name="RunManager" selected="JUnit.Zookeeper_MultiOp.opTest">
     <configuration name="Test12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dubbo.registry.Test12" />
       <module name="dubboregistryzookeeperdemo" />
@@ -370,22 +401,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZookeeperDemo2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dubboregistryzookeeperdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dubbo.registry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dubbo.registry" />
-      <option name="MAIN_CLASS_NAME" value="com.dubbo.registry.ZookeeperDemo2" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ZookeeperDemo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dubboregistryzookeeperdemo" />
       <extension name="coverage">
@@ -402,7 +417,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZookeeperDemo.test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Zookeeper_MultiOp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dubboregistryzookeeperdemo" />
       <extension name="coverage">
         <pattern>
@@ -411,27 +426,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dubbo.registry" />
-      <option name="MAIN_CLASS_NAME" value="com.dubbo.registry.ZookeeperDemo" />
-      <option name="METHOD_NAME" value="test22" />
+      <option name="MAIN_CLASS_NAME" value="com.dubbo.registry.Zookeeper_MultiOp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Zookeeper_MultiOp.opTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubboregistryzookeeperdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dubbo.registry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dubbo.registry" />
+      <option name="MAIN_CLASS_NAME" value="com.dubbo.registry.Zookeeper_MultiOp" />
+      <option name="METHOD_NAME" value="opTest" />
       <option name="TEST_OBJECT" value="method" />
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="7388251857987" />
+      </RunnerSettings>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.ZookeeperDemo.test" />
-      <item itemvalue="JUnit.ZookeeperDemo2.test" />
       <item itemvalue="JUnit.ZookeeperDemo" />
-      <item itemvalue="JUnit.ZookeeperDemo.test22" />
       <item itemvalue="Application.Test12" />
+      <item itemvalue="JUnit.Zookeeper_MultiOp" />
+      <item itemvalue="JUnit.Zookeeper_MultiOp.opTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Zookeeper_MultiOp.opTest" />
+        <item itemvalue="JUnit.Zookeeper_MultiOp" />
         <item itemvalue="JUnit.ZookeeperDemo.test" />
         <item itemvalue="JUnit.ZookeeperDemo" />
         <item itemvalue="Application.Test12" />
-        <item itemvalue="JUnit.ZookeeperDemo.test22" />
-        <item itemvalue="JUnit.ZookeeperDemo2.test" />
       </list>
     </recent_temporary>
   </component>
@@ -449,6 +481,7 @@
       <workItem from="1545486092331" duration="7204000" />
       <workItem from="1545897224757" duration="26229000" />
       <workItem from="1546309843850" duration="11681000" />
+      <workItem from="1546658815818" duration="5775000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1545471687009</created>
@@ -471,49 +504,56 @@
       <option name="project" value="LOCAL" />
       <updated>1546336104060</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1546666001304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546666001304</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ZookeeperDemo - 2019.01.01 at 11h 02m 19s.xml">
-      <configuration name="ZookeeperDemo" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp - 2019.01.05 at 12h 29m 48s.xml">
+      <configuration name="Zookeeper_MultiOp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 11h 10m 15s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp - 2019.01.05 at 12h 40m 12s.xml">
+      <configuration name="Zookeeper_MultiOp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 11h 22m 10s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 46m 14s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 11h 34m 39s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 47m 24s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 13h 29m 39s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 48m 38s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo - 2019.01.01 at 13h 31m 24s.xml">
-      <configuration name="ZookeeperDemo" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 49m 40s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 15h 13m 41s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 50m 19s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 15h 14m 14s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 50m 55s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 16h 21m 15s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 12h 53m 03s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZookeeperDemo_test - 2019.01.01 at 17h 48m 10s.xml">
-      <configuration name="ZookeeperDemo.test" configurationId="JUnit" />
+    <history-entry file="Zookeeper_MultiOp_opTest - 2019.01.05 at 13h 26m 42s.xml">
+      <configuration name="Zookeeper_MultiOp.opTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58344000" />
+    <option name="totallyTimeSpent" value="64119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25067025" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25402144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -523,8 +563,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37304965" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4141844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6822695" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -536,7 +576,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="15" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="15" weight="0.4609929" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -558,35 +598,25 @@
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Zookeeper_MultiOp.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Zookeeper_MultiOp.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/webapp/WEB-INF/spring/spring-dubbo-consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/Maven/repositories/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/config/ReferenceConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -741,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="1021" column="38" selection-start-line="1021" selection-start-column="38" selection-end-line="1021" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#216107#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,18 +814,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperConnection.java" />
     <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Test12.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1600">
@@ -844,13 +860,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/META-INF/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/META-INF/log4j.properties" />
     <entry file="jar://C:/Java/Maven/repositories/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/org/slf4j/LoggerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="879">
@@ -890,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/ZooKeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="551" column="37" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Watcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -910,11 +913,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/ZookeeperDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="341">
+          <caret line="92" column="13" lean-forward="true" selection-end-line="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/OpResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Op.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/ZooKeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="1034" lean-forward="true" selection-start-line="1034" selection-end-line="1034" />
+          <folding>
+            <element signature="e#43308#43309#0" expanded="true" />
+            <element signature="e#43352#43353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/webapp/WEB-INF/lib/zookeeper-3.4.13-sources.jar!/org/apache/zookeeper/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-registry-zookeeper-demo/src/main/java/com/dubbo/registry/Zookeeper_MultiOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
